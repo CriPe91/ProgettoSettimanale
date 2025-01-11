@@ -6,23 +6,21 @@ public abstract class ElementoMultimediale {
     protected int luminosita;
     protected int volume;
 
-    public  ElementoMultimediale(int durata,String titolo){
+    public  ElementoMultimediale(String titolo,int durata,int volume){
      this.titolo=titolo;
         this.durata=durata;
+        this.volume=volume;
+    }
+    public ElementoMultimediale(String titolo, int durata, int luminosita, int volume){
+        this.titolo=titolo;
+        this.durata=durata;
+        this.luminosita=luminosita;
+        this.volume=volume;
     }
 
     public ElementoMultimediale(String titolo,int luminosita){
         this.titolo=titolo;
         this.luminosita=luminosita;
-    }
-
-    public void Show(){
-        System.out.println("Titolo Immagine : "+ titolo);
-        System.out.println(titolo + " " + "luminosita: " + luminosita);
-    }
-
-    public void Play(){
-        System.out.println("Titolo: " + titolo + " , "+ "Durata, minuti:" + durata);
     }
 
 }

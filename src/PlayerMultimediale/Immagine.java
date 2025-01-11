@@ -6,22 +6,27 @@ public class Immagine extends ElementoMultimediale implements GestioneLuminosita
         super(titolo, luminosita);
     }
 
+    public void Show(){
+        System.out.println("Titolo Immagine : "+ titolo);
+        System.out.println(titolo + " " + "luminosita: " + "*".repeat(luminosita));
+    }
+
 
     @Override
     public void AbbassaLuminosita() {
-        int luminosita = 3;
-        while (luminosita < 0) {
-            System.out.println(titolo + "*".repeat(luminosita));
-            luminosita --;
-        }
+       if(luminosita<5){
+           System.out.println("Titolo: "+ titolo +" " +"Luminosita: "+"*".repeat(luminosita--));
+       }else{
+           System.out.println("Luminosita minima");
+       }
     }
 
     @Override
     public void AlzaLuminosita() {
-        int luminosita = 3;
-        while (luminosita > 5) {
-            System.out.println(titolo + "*".repeat(luminosita));
-            luminosita ++;
+        if (luminosita>0){
+            System.out.println("Titolo: "+ titolo +" "+"Luminosita: "+"*".repeat(luminosita++));
+      }else{
+            System.out.println("Luminosita massima");
         }
     }
 }
