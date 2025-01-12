@@ -10,6 +10,10 @@ public class RegistrazioneAudio extends ElementoMultimediale implements Gestione
             System.out.println("Titolo: " + titolo + " , "+ "Durata: " + durata +"min"+"Volume: "+"!".repeat(volume));
         }
     }
+    public void infoAudio(){
+        System.out.println("Titolo: " + titolo + " , "+ "Durata: " + durata +"min"+" "+"Volume: "+"!".repeat(volume));
+    }
+
 
     @Override
     public void AbbassaVolume() {

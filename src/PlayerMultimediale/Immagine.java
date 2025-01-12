@@ -11,6 +11,9 @@ public class Immagine extends ElementoMultimediale implements GestioneLuminosita
         System.out.println(titolo + " " + "luminosita: " + "*".repeat(luminosita));
     }
 
+    public void infoImmagine(){
+        System.out.println("Titolo: "+ titolo + " " + "luminosita: " + "*".repeat(luminosita));
+    }
 
     @Override
     public void AbbassaLuminosita() {

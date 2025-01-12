@@ -11,6 +11,9 @@ public class Video extends ElementoMultimediale implements GestioneLuminosita,Ge
             System.out.println("Titolo: " + titolo + " , "+ "Durata: " + durata +"min" + " "+"luminosita: " + "*".repeat(luminosita) +"Volume: "+"!".repeat(volume));
         }
     }
+    public void infoVideo(){
+        System.out.println("Titolo: " + titolo + " , "+ "Durata: " + durata +"min" + " "+"luminosita: " + "*".repeat(luminosita) +"Volume: "+"!".repeat(volume));
+    }
 
     @Override
     public void AbbassaLuminosita() {
